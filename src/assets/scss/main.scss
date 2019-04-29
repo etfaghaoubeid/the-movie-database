@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', Arial, sans-serif !important;
+
+}
+body{
+    background: #fff;
+    font-family: 'Source Sans Pro', Arial, sans-serif !important;
+}
+
+@import "./modules/navbar.scss";
+@import "./modules/footer.scss";

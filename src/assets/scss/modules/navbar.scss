@@ -1,0 +1,13 @@
+@import "../variables/colors.scss";
+.nav{
+    background: $primaryColor;
+    color:$whiteColor;
+    .logo{
+      color: $secondaryColor;
+      font-weight: bolder;
+      &:hover{
+          color: $secondaryColor;
+      }
+    }
+
+}
