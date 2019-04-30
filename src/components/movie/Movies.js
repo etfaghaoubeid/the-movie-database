@@ -4,22 +4,22 @@ import React ,{useEffect,useState}from 'react'
 import {API_KEY} from "../../config/keys"
 import Movie from './Movie';
 function Movies() {
-    let [movie,setMovie]= useState([]);
+    let [movies,setMovies]= useState([]);
     useEffect(() => {
        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
         .then(res=>res.json() )
-        .then(res=>setMovie(res.results))
+        .then(res=>setMovies(res.results))
         
     }, []);
 
 
   return (
-    <div>
-      <h1>hELLO</h1>
+    <div className="row">
+    
       {
-        movie.map(item=><Movie key={item.id}/>)
+        movies.map(movie=><Movie key={movie.id} movie={movie}/>)
       }
-      {console.log(movie)}
+      {console.log(movies)}
     </div>
   )
 }

@@ -6,7 +6,9 @@ function Main(props) {
   return (
     <Fragment>
         <Header/>
+        <div className="container">
         {props.children}
+        </div>
         <Footer/>
     </Fragment>
   )
