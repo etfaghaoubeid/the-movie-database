@@ -1,0 +1,14 @@
+@import "../variables//colors.scss";
+.search-form{
+    margin: 0;
+    Input[type=text] {
+        width: 80%;
+        padding: 1.5rem;
+        border:none;
+        margin: 0 2rem;
+        &:focus{
+             color:#acacac;
+        }
+    }
+
+}

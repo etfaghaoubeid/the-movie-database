@@ -7,7 +7,7 @@ import {Route} from 'react-router-dom'
 
 import Main from './components/layouts/Main';
 import Movies from './components/movie/Movies';
-import SearchForm from './components/search/Form';
+import SearchForm from './components/search/SearchForm';
 import ApiClient from './servies/ApiClient';
 
 function App() {
