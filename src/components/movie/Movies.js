@@ -17,9 +17,9 @@ function Movies() {
     <div className="row">
     
       {
-        movies.map(movie=><Movie key={movie.id} movie={movie}/>)
+        movies.map(movie=><Movie key={movie.id} movie={movie} col={5}/>)
       }
-      {console.log(movies)}
+      {/*console.log(movies)*/}
     </div>
   )
 }
